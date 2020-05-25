@@ -1,0 +1,30 @@
+.country{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+    margin-top: 60px;
+    font-size: 1.5rem;
+    
+    @media screen and (max-width: 550px) {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 10px;
+        margin: 40px 0;
+     }
+
+    select{
+        width: 300px;
+        height: 45px;
+        font-size: 24px;
+        border-radius: 5px;
+        margin-left: 10px;
+
+        @media screen and (max-width: 550px) {
+            width: 100%;
+            margin-left: 0;
+            margin-top: 10px;
+         }
+    }
+}

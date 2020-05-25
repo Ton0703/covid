@@ -16,4 +16,18 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 60px;
+
+    .title{
+       margin-bottom: 30px;
+
+       img{
+           width: 100%;
+           height: auto;
+       }
+
+       @media screen and (max-width: 550px) {
+        width: 80%;
+     }
+    }
 }

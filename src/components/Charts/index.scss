@@ -1,0 +1,11 @@
+.chart{
+    width: 80%;
+
+    @media screen and (max-width: 550px) {
+        width: 100%;
+
+        canvas{
+            width: 100%;
+        }
+    }
+}

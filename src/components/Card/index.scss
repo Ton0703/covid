@@ -8,6 +8,11 @@
     border-bottom: 10px solid;
     border-radius: 3px;
 
+    @media screen and (max-width: 550px) {
+        width: 100%;
+        margin-bottom: 10px;
+     }
+    
     .name{
         font-family: 'Ma Shan Zheng', cursive;
         font-size: 1rem;
@@ -21,10 +26,11 @@
     .updateTime{
         font-size: .6rem;
         color: gray;
+        user-select: none;
     }
     .time{
         font-size: .8rem;
         color: gray;
-        
+        user-select: none;
     }
 }
