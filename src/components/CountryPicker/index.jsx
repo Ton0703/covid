@@ -6,7 +6,6 @@ function CountryPicker({handleCountryChange}) {
     const [Countries, set] = useState([])
     useEffect(() => {
         axios.get('https://covid19.mathdro.id/api/countries').then(res => {
-            console.log(res.data)
             set(res.data.countries.map(({name}) => name ))
         })
     }, [])
@@ -14,7 +13,7 @@ function CountryPicker({handleCountryChange}) {
         <div className='country'>
             <h4>选择地区:</h4>
             <select name="country"  onChange={e => handleCountryChange(e.target.value)}>
-                <option>global</option>
+                <option>Global</option>
                 {Countries.map((item, index) => (
                     <option key={index} value={item}>
                         {item}

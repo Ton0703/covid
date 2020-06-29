@@ -6,7 +6,7 @@ function Cards({ data }) {
   const { confirmed, recovered, deaths, lastUpdate } = data;
   return (
     <>
-      {confirmed && (
+      {confirmed ? (
         <div className='cards'>
           <Card
             name="确诊人数"
@@ -24,6 +24,27 @@ function Cards({ data }) {
             name="死亡人数"
             number={deaths.value}
             time={lastUpdate}
+            color={'lightPink'}
+          />
+        </div>
+      ) : (
+        <div className='cards'>
+          <Card
+            name="确诊人数"
+            number={0}
+            time={null}
+            color={'lightBlue'}
+          />
+          <Card
+            name="治愈人数"
+            number={0}
+            time={null}
+            color={'lightGreen'}
+          />
+          <Card
+            name="死亡人数"
+            number={0}
+            time={null}
             color={'lightPink'}
           />
         </div>
