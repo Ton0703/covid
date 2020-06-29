@@ -13,7 +13,7 @@ function CountryPicker({handleCountryChange}) {
         <div className='country'>
             <h4>选择地区:</h4>
             <select name="country"  onChange={e => handleCountryChange(e.target.value)}>
-                <option>Global</option>
+                <option value=''>Global</option>
                 {Countries.map((item, index) => (
                     <option key={index} value={item}>
                         {item}

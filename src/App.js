@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './App.scss';
 import { Cards, Charts, CountryPicker} from '@/components'
+import Logo from './logo'
 
 import axios from 'axios'
 
@@ -22,7 +23,9 @@ function App() {
   return (
     <div className="App">
         <div className='title'>
-          <img src='/image.png' alt='' />
+          C
+          <Logo />
+          VID-19
         </div>
         <Cards data={data} />
         <CountryPicker handleCountryChange={handleCountryChange} />
